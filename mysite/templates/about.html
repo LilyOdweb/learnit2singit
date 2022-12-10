@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>LearnIT2SingIT is a music score sheet web application that houses a large database of
+music sheets and other music resources. The music sheet will be for music enthusiasts interested in
+using the resources for private practice or choral groups. This will make learning easy, interesting,
+and at the click of a button. </p>
+</div>
+
+<h2 style="text-align:center">We Offer</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="http://behackerconscious.com/choir/about/about1.png" alt="" style="width:100%; height:270px">
+      <div class="container">
+        <h2>Trainings</h2>
+        <p class="title">Music </p>
+        <p>Your one-stop to perfection in music.</p>
+        <p>We make it easy here.</p>
+       <!--  <p><button class="button">Contact</button></p> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="http://behackerconscious.com/choir/about/about2.png" alt="" style="width:100%; height:270px">
+      <div class="container">
+        <h2>Counselling</h2>
+        <p class="title"> Music Counselling </p>
+        <p>Are you unsure of your ability?</p>
+        <p>LearnIT2SingIT is the place to be.</p>
+        
+<!--  <p><button class="button">Contact</button></p> -->
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="http://behackerconscious.com/choir/about/about3.png" alt="" style="width:100%; height:270px" >
+      <div class="container">
+        <h2>Our collections</h2>
+        <p class="title">Services</p>
+        <p>We offer a collection of music genres.</p>
+        <p>Rock, gospel, classical, RnB</p>
+<!--  <p><button class="button">Contact</button></p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+{% endblock %}
